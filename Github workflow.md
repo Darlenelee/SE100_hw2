@@ -1,10 +1,71 @@
-# Github workflow
+# Github workflow  
+
+A brief introduction of github flow presented by Yijun Li, 516030910395.
+
+![img](http://m.c.exp1.licdn.com/mpr/mpr/AAEAAQAAAAAAAATiAAAAJGI1ZTdmYmJiLWUzMzktNGE3NC05OGM4LTI5NTA2MWRkYWY3Yw.png)
 
 ## What?
 
 > GitHub Flow is a lightweight, branch-based workflow that supports teams and projects where deployments are made regularly.            ----Github Guides
 
 ## Why?
+
+* Every one in the team has his own local repo. Avoid interrupting others' work.
+
+* Push once after committing multiple times.
+
+* Pull request enables code review.
+
+* After evaluating the output, only have to merge once and then consider new demands.
+
+  #####_Comparison between SVN and GIT:_
+
+  **1-workflow:**
+
+  **-GIT:**
+
+  - A Git repository stores the full history of all of its branches and tags within the *.git*
+  - The latest stable release is contained within the master
+  - Active feature work is developed in separate branches.
+  - When a feature is finished, the feature branch is merged into masterand deleted.
+
+  **-SVN:**
+
+  - The trunk directory represents the latest stable release of a project.
+  - Active feature work is developed within subdirectories under branches.
+  - When a feature is finished, the feature directory is merged into trunk and removed.
+
+  **2- Distribution:**
+
+  **-Git **is Distributed Revision Control System which means, every developers checking out code from central repository/server will have their own cloned repository installed on their machine.
+
+  **-SVN **have centralized Revision Control System, or server
+
+  **3-Storing data:**
+
+  **-Git** stores content as metadata
+
+  **-SVN** stores content as  files
+
+  **4-Revision:**
+
+  **-GIT** does not have a global revision no
+
+  **-SVN’**s revision no. is a snapshot of source code at any given time
+
+  **5-Location and size:**
+
+  Imagine you are a developer on the road, you develop on your laptop and you want to have source control so that you can go back 3 hours*.*
+
+  **With Git**, you do not have the SVN problem. Your local copy is a repository, and you can commit to it and get all benefits of source control. When you regain connectivity to the main repository, you can commit against it.
+
+  **With Subversion**, you have a Problem: The SVN Repository may be in a location you can't reach (in your company, and you don't have internet at the moment), you cannot commit. If you want to make a copy of your code, you have to literally copy/paste it.
+
+  **6-content integrity:**
+
+  **GIT **contents are cryptographically hashed using [SHA-1](http://en.wikipedia.org/wiki/SHA-1) hash algorithm.This will ensure the robustness of code contents by making it less prone to repository corruption due to disk failures, network issues etc
+
+  **SVN** doesnt have a hashed contents.This will risk to lose code and contents due to disk failure , network issues
 
 ## How?
 
@@ -63,3 +124,20 @@ Once merged, Pull Requests preserve a record of the historical changes to your c
 #### *ProTip*
 
 By incorporating certain keywords into the text of your Pull Request, you can associate issues with code. When your Pull Request is merged, the related issues are also closed. For example, entering the phrase `Closes #32` would close issue number 32 in the repository.
+
+## Drawbacks
+
+* For enterprises:
+
+  1. high price
+  2. difficulty to learn for all team members
+
+* For individuals:  
+
+  1. too slow to load the website; 
+
+  2. not friendly to Chinese characters;
+
+  3. weak Wiki functions
+
+     ​
