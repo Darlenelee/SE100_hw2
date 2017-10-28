@@ -73,7 +73,9 @@ A brief introduction of github flow presented by Yijun Li, 516030910395.
 
 When you're working on a project, you're going to have a bunch of different features or ideas in progress at any given time – some of which are ready to go, and others which are not. Branching exists to help you manage this workflow.
 
-When you create a branch in your project, you're creating an environment where you can try out new ideas. Changes you make on a branch don't affect the `master` branch, so you're free to experiment and commit changes, safe in the knowledge that your branch won't be merged until it's ready to be reviewed by someone you're collaborating with.
+When you create a branch in your project, you're creating an environment where you can try out new ideas. Changes you make on a branch don't affect the `master` branch, so you're free to experiment and commit changes, safe in the knowledge that your branch won't be merged until it's ready to be reviewed by someone you're collaborating with
+
+![屏幕快照 2017-10-28 下午4.37.20](/Users/darlenelee/Desktop/屏幕快照 2017-10-28 下午4.37.20.png)
 
 ####*Protip*
 
@@ -87,6 +89,8 @@ Once your branch has been created, it's time to start making changes. Whenever y
 
 Commits also create a transparent history of your work that others can follow to understand what you've done and why. Each commit has an associated commit message, which is a description explaining why a particular change was made. Furthermore, each commit is considered a separate unit of change. This lets you roll back changes if a bug is found, or if you decide to head in a different direction.
 
+![屏幕快照 2017-10-28 下午4.37.31](/Users/darlenelee/Desktop/屏幕快照 2017-10-28 下午4.37.31.png)
+
 #### *ProTip*
 
 Commit messages are important, especially since Git tracks your changes and then displays them as commits once they're pushed to the server. By writing clear commit messages, you can make it easier for other people to follow along and provide feedback.
@@ -96,6 +100,8 @@ Commit messages are important, especially since Git tracks your changes and then
 Pull Requests initiate discussion about your commits. Because they're tightly integrated with the underlying Git repository, anyone can see exactly what changes would be merged if they accept your request.
 
 You can open a Pull Request at any point during the development process: when you have little or no code but want to share some screenshots or general ideas, when you're stuck and need help or advice, or when you're ready for someone to review your work. By using GitHub's @mention system in your Pull Request message, you can ask for feedback from specific people or teams, whether they're down the hall or ten time zones away.
+
+![屏幕快照 2017-10-28 下午4.37.37](/Users/darlenelee/Desktop/屏幕快照 2017-10-28 下午4.37.37.png)
 
 #### *ProTip*
 
@@ -107,6 +113,8 @@ Once a Pull Request has been opened, the person or team reviewing your changes m
 
 You can also continue to push to your branch in light of discussion and feedback about your commits. If someone comments that you forgot to do something or if there is a bug in the code, you can fix it in your branch and push up the change. GitHub will show your new commits and any additional feedback you may receive in the unified Pull Request view.
 
+![屏幕快照 2017-10-28 下午4.37.44](/Users/darlenelee/Desktop/屏幕快照 2017-10-28 下午4.37.44.png)
+
 #### *ProTip*
 
 Pull Request comments are written in Markdown, so you can embed images and emoji, use pre-formatted text blocks, and other lightweight formatting.
@@ -115,11 +123,15 @@ Pull Request comments are written in Markdown, so you can embed images and emoji
 
 Once your pull request has been reviewed and the branch passes your tests, you can deploy your changes to verify them in production. If your branch causes issues, you can roll it back by deploying the existing master into production.
 
+![屏幕快照 2017-10-28 下午4.37.51](/Users/darlenelee/Desktop/屏幕快照 2017-10-28 下午4.37.51.png)
+
 ### 6.Merge
 
 Now that your changes have been verified in production, it is time to merge your code into the master branch.
 
 Once merged, Pull Requests preserve a record of the historical changes to your code. Because they're searchable, they let anyone go back in time to understand why and how a decision was made.
+
+![屏幕快照 2017-10-28 下午4.37.57](/Users/darlenelee/Desktop/屏幕快照 2017-10-28 下午4.37.57.png)
 
 #### *ProTip*
 
